@@ -1,0 +1,5 @@
+## Interface: 33500
+## Title: TD Filter
+## SavedVariables: globalIgnores
+
+td_filter.lua

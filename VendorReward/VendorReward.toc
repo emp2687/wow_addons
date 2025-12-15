@@ -1,0 +1,16 @@
+﻿## Interface: 30300
+## X-Curse-Packaged-Version: v1.1
+## X-Curse-Project-Name: VendorReward
+## X-Curse-Project-ID: vendorreward
+## X-Curse-Repository-ID: wow/vendorreward/mainline
+
+## Title: VendorReward
+## Notes: Add a button to quest turn-in that selects most valuable item.
+## Author: Mecdemort
+## X-eMail: Mecdemort@gmail.com
+## X-Website: http://wow.curse.com/downloads/wow-addons/details/vendorreward.aspx
+
+## Version: v1.1
+## X-Category: Quest
+
+VendorReward.lua

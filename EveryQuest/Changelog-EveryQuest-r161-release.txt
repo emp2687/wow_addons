@@ -1,0 +1,115 @@
+------------------------------------------------------------------------
+r161 | kandarz | 2010-02-25 08:30:15 +0000 (Thu, 25 Feb 2010) | 1 line
+Changed paths:
+   A /tags/r161-release (from /trunk:160)
+
+Created tag r161-release.
+------------------------------------------------------------------------
+r159 | kandarz | 2010-02-23 11:08:16 +0000 (Tue, 23 Feb 2010) | 1 line
+Changed paths:
+   M /trunk/query.lua
+
+Fix nil unknowns on import
+------------------------------------------------------------------------
+r158 | kandarz | 2010-02-21 23:12:37 +0000 (Sun, 21 Feb 2010) | 1 line
+Changed paths:
+   M /trunk/query.lua
+
+Remove those annoying old unknown variables on new server imports
+------------------------------------------------------------------------
+r156 | kandarz | 2010-02-20 10:03:44 +0000 (Sat, 20 Feb 2010) | 2 lines
+Changed paths:
+   M /trunk/Core.lua
+
+Hook GameTooltip:SetHyperlink
+Removed the Loremaster addon line from the new hook script.
+------------------------------------------------------------------------
+r155 | kandarz | 2010-02-15 18:07:29 +0000 (Mon, 15 Feb 2010) | 1 line
+Changed paths:
+   M /trunk/EveryQuest.toc
+   M /trunk/query.lua
+
+See if this fixes old unknowns problem
+------------------------------------------------------------------------
+r153 | kandarz | 2010-02-08 15:40:33 +0000 (Mon, 08 Feb 2010) | 2 lines
+Changed paths:
+   M /trunk/Core.lua
+   M /trunk/events.lua
+   M /trunk/query.lua
+
+Fix SideNone filter (applies to new valentines day quests)
+Maybe fix annoying server query bug
+------------------------------------------------------------------------
+r151 | kandarz | 2010-02-08 05:58:43 +0000 (Mon, 08 Feb 2010) | 1 line
+Changed paths:
+   M /trunk/Modules/World_Events/World_Events.lua
+
+Manual Update Love is in the Air quest categories
+------------------------------------------------------------------------
+r149 | kandarz | 2010-02-07 07:41:42 +0000 (Sun, 07 Feb 2010) | 1 line
+Changed paths:
+   M /trunk/query.lua
+
+Fix clear unknowns when no unknowns exist
+------------------------------------------------------------------------
+r147 | kandarz | 2010-02-04 09:23:37 +0000 (Thu, 04 Feb 2010) | 1 line
+Changed paths:
+   M /trunk/query.lua
+
+Clear query unknowns before populate
+------------------------------------------------------------------------
+r146 | kandarz | 2010-02-01 09:22:08 +0000 (Mon, 01 Feb 2010) | 1 line
+Changed paths:
+   M /trunk/Modules/Battlegrounds/Battlegrounds.lua
+   M /trunk/Modules/Miscellaneous/Miscellaneous.lua
+   M /trunk/Modules/Northrend/Northrend.lua
+   M /trunk/Modules/Raids/Raids.lua
+   M /trunk/Modules/World_Events/World_Events.lua
+   M /trunk/zonemenu.lua
+
+Real Data Update
+------------------------------------------------------------------------
+r145 | kandarz | 2010-02-01 08:49:41 +0000 (Mon, 01 Feb 2010) | 3 lines
+Changed paths:
+   M /trunk
+   M /trunk/Core.lua
+   M /trunk/frames.lua
+   M /trunk/locales/enUS.lua
+   M /trunk/zonemenu.lua
+
+Global Ignores
+Locale Fix
+Add "%d Hidden" to count tooltip
+------------------------------------------------------------------------
+r144 | kandarz | 2010-02-01 08:37:22 +0000 (Mon, 01 Feb 2010) | 1 line
+Changed paths:
+   M /trunk/.pkgmeta
+   M /trunk/Core.lua
+   M /trunk/Modules/Battlegrounds/Battlegrounds.lua
+   M /trunk/Modules/Classes/Classes.lua
+   M /trunk/Modules/Dungeons/Dungeons.lua
+   M /trunk/Modules/Eastern_Kingdoms/Eastern_Kingdoms.lua
+   M /trunk/Modules/Kalimdor/Kalimdor.lua
+   M /trunk/Modules/Miscellaneous/Miscellaneous.lua
+   M /trunk/Modules/Northrend/Northrend.lua
+   M /trunk/Modules/Outland/Outland.lua
+   M /trunk/Modules/Professions/Professions.lua
+   M /trunk/Modules/Raids/Raids.lua
+   D /trunk/Modules/Seasonal
+   A /trunk/Modules/World_Events
+   A /trunk/Modules/World_Events/EveryQuest_World_Events.toc
+   A /trunk/Modules/World_Events/World_Events.lua
+   M /trunk/locales/enUS.lua
+   M /trunk/modules.xml
+   M /trunk/query.lua
+   M /trunk/zonemenu.lua
+
+Data Update (Seasonal got changed to World Events)
+------------------------------------------------------------------------
+r143 | ananhaid | 2010-01-15 12:43:48 +0000 (Fri, 15 Jan 2010) | 2 lines
+Changed paths:
+   M /trunk/EveryQuest.toc
+
+EveryQuest:
+- Add zhCN/zhTW toc notes.
+------------------------------------------------------------------------

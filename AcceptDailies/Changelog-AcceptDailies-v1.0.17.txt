@@ -1,0 +1,16 @@
+------------------------------------------------------------------------
+r38 | profplump | 2010-09-02 21:26:26 +0000 (Thu, 02 Sep 2010) | 3 lines
+Changed paths:
+   A /tags/v1.0.17 (from /trunk:37)
+
+Tagging as v1.0.17
+
+Make all slash commands case insensitive. Remove one global variable.
+------------------------------------------------------------------------
+r37 | profplump | 2010-09-02 21:06:34 +0000 (Thu, 02 Sep 2010) | 1 line
+Changed paths:
+   M /trunk/AcceptDailies.lua
+   M /trunk/AcceptDailies.toc
+
+Make slash commands case-insensitive
+------------------------------------------------------------------------

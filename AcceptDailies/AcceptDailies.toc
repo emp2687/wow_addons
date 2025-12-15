@@ -1,0 +1,16 @@
+## Interface: 30300
+## Author: profplump
+## Title: AcceptDailies
+## SavedVariables: ad_DEBUG
+## SavedVariablesPerCharacter: ad_PermDisable
+## Notes: AcceptDailies automatically accepts a hard-coded list of quests whenever they are presented
+## Version : 1.0.17
+## X-Curse-Packaged-Version: v1.0.17
+## X-Curse-Project-Name: AcceptDailies
+## X-Curse-Project-ID: acceptdailies
+## X-Curse-Repository-ID: wow/acceptdailies/mainline
+## X-Curse-Packaged-Version: v1.0.17
+## X-Curse-Project-Name: AcceptDailies
+## X-Curse-Project-ID: acceptdailies
+## X-Curse-Repository-ID: wow/acceptdailies/mainline
+AcceptDailies.lua
