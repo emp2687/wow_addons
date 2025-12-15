@@ -1,0 +1,5 @@
+## Interface: 33500
+## Title: TD Ignores
+## SavedVariables: globalIgnores
+
+td_ignores.lua
