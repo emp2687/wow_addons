@@ -34,13 +34,14 @@ function slashCommandHandler(msg)
   if(msg) then
 	local command = strlower(msg)
 	if (command == "list") then
---        print("bad:")
+        local keys = {}
         for name, value in pairs(badText) do
-            if value then
-                print(name)
-            end
+            if value then table.insert(keys, name) end
         end
-  --      print("end.")
+        table.sort(keys)
+        for _, name in ipairs(keys) do
+            print(name)
+        end
 	else
         if badText[command] then
             badText[command] = false
@@ -51,30 +52,7 @@ function slashCommandHandler(msg)
   end
 end
 
---[[
-local function isGlobalIgnored(from)
-    for name, value in pairs(globalIgnores) do
-        if value then
-            if from == name then
-                print("ignoring from "..name)
-                return true
-            end
-        end
-    end
-    return false
-end
-]]--
-
 local function eventHandler(self, event, text, from)
---   print("got text " .. text);
---  print(from);
-
---[[
-    if isGlobalIgnored(from) then
-        return true
-    end
-]]--
-
     if text ~= nil then
         local t = string.lower(text)
         for name, value in pairs(badText) do
@@ -82,7 +60,7 @@ local function eventHandler(self, event, text, from)
                 local frag = string.lower(name)
                 local startPos, endPos = string.find(t, frag)
                 if startPos ~= nil then
-                    print("should block " .. text);
+              --      print("should block " .. text);
                     return true
                 end
             end
