@@ -32,6 +32,6 @@ locale\zhCN.lua
 locale\zhTW.lua
 
 PallyPower.lua
-PallyPowerValues.lua
+PallyPowerValues_WOTLK.lua
 PallyPowerOptions.lua
 PallyPower.xml

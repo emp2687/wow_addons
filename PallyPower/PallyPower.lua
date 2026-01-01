@@ -785,7 +785,8 @@ function PallyPower:ScanSpells()
 	if (class == "PALADIN") then
 		local RankInfo = {}
 		for i = 1, PallyPower.BLESSINGS_COUNT - 1 do -- find max spell ranks
-			local spellName, spellRank = GetSpellInfo(PallyPower.GSpells[i])
+			local name = PallyPower.GSpells[i]
+			local spellName, spellRank = GetSpellInfo(name)
 			if not spellName then -- fallback to lower blessings
 				spellName, spellRank = GetSpellInfo(PallyPower.Spells[i])
 			end

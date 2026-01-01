@@ -459,6 +459,8 @@ local function sysmsgFilter(self,event,msg,...)
 	-- Group invites:
 	local player = strmatch(msg, _ERR_INVITED_TO_GROUP_SS) or strmatch(msg, _ERR_INVITED_ALREADY_IN_GROUP_SS)
 	if player and type(list[player])=="table" then
+		return true
+		--[[
 		if notifiedInvite[player] then
 			return true
 		else
@@ -468,6 +470,7 @@ local function sysmsgFilter(self,event,msg,...)
 			--DBG print(msg)
 			return false, msg, ...
 		end
+		]]--
 	end
 end
 

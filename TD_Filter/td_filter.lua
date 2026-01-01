@@ -1,12 +1,11 @@
-globalIgnores = {}
+SlashCmdList["TD_FILTER"] = function(msg)
+    slashCommandHandler(msg)
+end
+SLASH_TD_FILTER1 = "/tdf"
 
-local badText = {
-    "GDKP",
-    "WOTLK",
-    "WTS",
-    "anal",
-    "Naxxramas"
-}
+if(not badText) then
+    badText = {}
+end
 
 local events = {
     "CHAT_MSG_ACHIEVEMENT",
@@ -31,6 +30,26 @@ local events = {
     "CHAT_MSG_YELL"
 }
 
+function slashCommandHandler(msg)
+  if(msg) then
+	local command = strlower(msg)
+	if (command == "list") then
+--        print("bad:")
+        for name, value in pairs(badText) do
+            if value then
+                print(name)
+            end
+        end
+  --      print("end.")
+	else
+        if badText[command] then
+            badText[command] = false
+        else
+            badText[command] = true
+        end
+	end
+  end
+end
 
 --[[
 local function isGlobalIgnored(from)
@@ -58,12 +77,14 @@ local function eventHandler(self, event, text, from)
 
     if text ~= nil then
         local t = string.lower(text)
-        for i = 1, #badText do
-            local frag = string.lower(badText[i])
-            local startPos, endPos = string.find(t, frag)
-            if startPos ~= nil then
---                print("should block " .. text);
-                return true
+        for name, value in pairs(badText) do
+            if value then
+                local frag = string.lower(name)
+                local startPos, endPos = string.find(t, frag)
+                if startPos ~= nil then
+                    print("should block " .. text);
+                    return true
+                end
             end
         end
     end
